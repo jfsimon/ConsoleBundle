@@ -18,18 +18,14 @@ use Symfony\Component\Console\Formatter\OutputFormatter;
  *
  * @author ndmf
  * @author Konstantin Kudryashov <ever.zet@gmail.com>
+ * @author Jean-François Simon <contact@jfsimon.fr>
  *
  * @api
  */
 class OutputFormatterHtml extends OutputFormatter
 {
     /**
-     * Initializes console output formatter.
-     *
-     * @param   Boolean $decorated  Whether this formatter should actually decorate strings
-     * @param   array   $styles     Array of "name => FormatterStyle" instance
-     *
-     * @api
+     * {@inheritdoc}
      */
     public function __construct($decorated = null, array $styles = array())
     {
@@ -43,5 +39,13 @@ class OutputFormatterHtml extends OutputFormatter
         parent::__construct($decorated, $styles);
 
         $this->getStyleStack()->setEmptyStyle(new OutputFormatterStyleHtml());
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function format($message)
+    {
+        return sprintf('<pre>%s</pre>', parent::format($message));
     }
 }
