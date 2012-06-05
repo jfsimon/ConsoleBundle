@@ -16,18 +16,18 @@
             text-align: left;"
 >
     <span style="display:block; position:absolute; text-align:right; top:2px; right:2px; width:auto; height:20px;">
-        <img 
-            alt="Show console" 
+        <img
+            alt="Show console"
             style="cursor: pointer;"
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAAlFJREFUeJylk7FrFFEQxn/z3tu9Z3bvchBIQBEsrCSEdEKMhWWE2EUrq5AyBP8IJUUCIvgX2NkIqWw02AkWkaRILV5ySXMJCefe7tv3noXcYkhh4cDHwMwwMx/zDfynycLCwpPt7e0309PTXe99k4gxAtBut6/EYoxorTk8PDxfXV19rjc3N98tLS3dGw6HNs9zm2WZnZiYaKCUslrrBiJiRcTOzs52T05OctPtdpN+v8/LV6+Yn5/nbDCg1WqhlLq+rghFUXB6esrW1hbWWmtijEGA2bk5Hj56xPe9Pfb39vg1HF5rEmMkhMDU1BTOOeq6DkYpRZqm7H76xM3bt3n29Cm9Xo+D/X2stde28N4jIlxeXuK9x2itKYqCW3fuEGNkfX2db1+/MhwOUSLYGzdQShFjbCiUZYn3Hq01RilFu9Phw/v3vH39Gpum3H/wgMfLy1Qh8PnjR456PQDqumYwGJBlWUPJACilcFUFMZKkKUc/f/Jld5cInJ2dEULAOUdRFDjnEBHqukZE/lAQEfI8xzlHp9MhhsBJv48SIU0SJicnKcsSYwxVVaG1ZqwZIyKICFmW4Zyj3W5jrSVJEkSEGCPOOUajEcYYRqMRrVbraoMQAnVdE0JAKYUxhiRJrkxyzgEQQmjqAYzW2qRpytraGlVVNdPH1EIIVFVFWZaUZcnFxQUzMzPjc2pzcHDwY3FxcW5jY+OKYOq6buC9b7z3nqqqcM5xfHw8kE6nc3dlZeVFnudd730cq+1v5Y0faxwXETk/P7/Y2dl5849n/bf9Bv1DPYZYR4JBAAAAAElFTkSuQmCC" 
-            onclick="el=document.getElementById('sf2gencdt-console');if(el.style.display == 'none'){el.style.display = 'block';document.getElementById('sf2gencdt-console-input').focus();}else{el.style.display = 'none';}" 
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAAlFJREFUeJylk7FrFFEQxn/z3tu9Z3bvchBIQBEsrCSEdEKMhWWE2EUrq5AyBP8IJUUCIvgX2NkIqWw02AkWkaRILV5ySXMJCefe7tv3noXcYkhh4cDHwMwwMx/zDfynycLCwpPt7e0309PTXe99k4gxAtBut6/EYoxorTk8PDxfXV19rjc3N98tLS3dGw6HNs9zm2WZnZiYaKCUslrrBiJiRcTOzs52T05OctPtdpN+v8/LV6+Yn5/nbDCg1WqhlLq+rghFUXB6esrW1hbWWmtijEGA2bk5Hj56xPe9Pfb39vg1HF5rEmMkhMDU1BTOOeq6DkYpRZqm7H76xM3bt3n29Cm9Xo+D/X2stde28N4jIlxeXuK9x2itKYqCW3fuEGNkfX2db1+/MhwOUSLYGzdQShFjbCiUZYn3Hq01RilFu9Phw/v3vH39Gpum3H/wgMfLy1Qh8PnjR456PQDqumYwGJBlWUPJACilcFUFMZKkKUc/f/Jld5cInJ2dEULAOUdRFDjnEBHqukZE/lAQEfI8xzlHp9MhhsBJv48SIU0SJicnKcsSYwxVVaG1ZqwZIyKICFmW4Zyj3W5jrSVJEkSEGCPOOUajEcYYRqMRrVbraoMQAnVdE0JAKYUxhiRJrkxyzgEQQmjqAYzW2qRpytraGlVVNdPH1EIIVFVFWZaUZcnFxQUzMzPjc2pzcHDwY3FxcW5jY+OKYOq6buC9b7z3nqqqcM5xfHw8kE6nc3dlZeVFnudd730cq+1v5Y0faxwXETk/P7/Y2dl5849n/bf9Bv1DPYZYR4JBAAAAAElFTkSuQmCC"
+            onclick="el=document.getElementById('sf2gencdt-console');if(el.style.display == 'none'){el.style.display = 'block';document.getElementById('sf2gencdt-console-input').focus();}else{el.style.display = 'none';}"
         />
         <div
             id="sf2gencdt-console"
             style="display:none;
             position:relative;width:100%;"
         >
-            <div 
+            <div
             id="sf2gencdt-console-output"
             style="position:relative;
                    background-color:#000;
@@ -45,31 +45,31 @@
             </div>
             <div>
 {% if apps|length > 1 %}
-            <select
-                id="sf2gencdt-console-app" 
-                type="text" 
-                style="float:left;width:19%;background-color:#000;color:#fff;padding:2px;"
-                onkeydown="return sf2gen.console(event);"
-            />
+                <select
+                    id="sf2gencdt-console-app"
+                    type="text"
+                    style="float:left;width:19%;background-color:#000;color:#fff;padding:2px;"
+                    onkeydown="return sf2gen.console(event);"
+                >
 {% for item in apps %}
-            <option value="{{ item }}">{{ item }}</option>
-{% endfor %}            
-            </select>
-            <input
-                id="sf2gencdt-console-input" 
-                type="text" 
-                style="float:left;width:79%;background-color:#000;color:#fff;padding:2px;"
-                onkeydown="return sf2gen.console(event);"
-            />            
+                    <option value="{{ item }}">{{ item }}</option>
+{% endfor %}
+                </select>
+                <input
+                    id="sf2gencdt-console-input"
+                    type="text"
+                    style="float:left;width:79%;background-color:#000;color:#fff;padding:2px;"
+                    onkeydown="return sf2gen.console(event);"
+                />
 {% else %}
-            <input
-                id="sf2gencdt-console-input" 
-                type="text" 
-                style="width:98%;background-color:#000;color:#fff;padding:2px;"
-                onkeydown="return sf2gen.console(event);"
-            />
+                <input
+                    id="sf2gencdt-console-input"
+                    type="text"
+                    style="width:98%;background-color:#000;color:#fff;padding:2px;"
+                    onkeydown="return sf2gen.console(event);"
+                />
 {% endif %}
-            <div id="sf2gencdt-console-ac" style="position:absolute;text-align:left;bottom:20px;left:0;display:none;"></div>
+                <div id="sf2gencdt-console-ac" style="position:absolute;text-align:left;bottom:20px;left:0;display:none;"></div>
             </div>
         </div>
     </span>
